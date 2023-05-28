@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div id="root">
+    </div>
+</body>
+<!--create element and add listener-->
+<script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+<!-- element to html-->
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+<!-- babel -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="text/babel">
+    const root = document.getElementById("root");
+    let counter = 0;
+    function countUp(){
+        counter = counter + 1;
+        Render();
+    }
+    function Render(){
+        ReactDOM.render(<Container/>  , root);
+    }
+    const Container = () => (
+        <div>
+            <h3>Total clicks: {counter}</h3>
+            <button onClick={countUp}>Click me</button>
+        </div>
+        );
+        Render();
+
+    /* 축약과 정석
+    function Container() {
+        return (<div>
+            <h3>Total clicks: {counter}</h3>
+            <button onClick={countUp}>Click me</button>
+        </div>
+        );
+    }
+    */
+</script>
+
+</html>

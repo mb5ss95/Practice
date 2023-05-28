@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div id="root">
+    </div>
+</body>
+<!--create element and add listener-->
+<script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+<!-- element to html-->
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+<!-- babel -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<!-- propoties type -->
+<script src="https://unpkg.com/prop-types@15.8.1/index.js/prop-types.js"></script>
+
+<script type="text/babel">
+    // Variable Transfer
+    function Btn({text, big}){
+        return <button style={{
+            backgroudColor: "tomato",
+            color:"white",
+            padding:"10px 20px",
+            border: 0,
+            borderRadius: 10,
+            fontSize: big ? 18 : 16 
+        }}>{text}</button>;
+    }
+    // Object transfer
+    /* function Btn(props){
+        return <button style={{
+            backgroudColor: "tomato",
+            color:"white",
+            padding:"10px 20px",
+            border: 0,
+            borderRadius: 10
+            fontSize: props.big ? 18 : 16 
+        }}>{props.text}</button>;
+    } */
+    function App(){
+        return (
+        <div>
+            <Btn text="Save Changes" big={true}/>
+            <Btn text="Continue" big={false}/>
+        </div>
+        );
+    }
+    let root = document.getElementById("root");
+    ReactDOM.render(<App />  , root);
+
+</script>
+
+</html>

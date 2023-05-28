@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div id="root">
+    </div>
+</body>
+<!--create element and add listener-->
+<script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+<!-- element to html-->
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+<!-- babel -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<!-- propoties type -->
+<script src="https://unpkg.com/prop-types@15.8.1/index.js/prop-types.js"></script>
+
+<script type="text/babel">
+    // Variable Transfer
+    function Btn({text, fontSize = 16}){
+        return (
+            <button 
+                style={{
+                backgroudColor: "tomato",
+                color:"white",
+                padding:"10px 20px",
+                border: 0,
+                borderRadius: 10,
+                fontSize,}}>
+                {text}
+            </button>
+        );
+    }
+    Btn.protoTypes = { // Btn prop 타입 설정 (에러 방지)
+        text: PropTypes.string.isRequired, // 필수 prop isRequired
+        fontSize: PropTypes.number, // 옵션 prop
+    }
+
+    function App(){
+        return (
+        <div>
+            <Btn text="Save Changes" fontSize={18}/>
+            <Btn text="Save Changes" fontSize={18}/>
+        </div>
+        );
+    }
+    let root = document.getElementById("root");
+    ReactDOM.render(<App />  , root);
+
+</script>
+
+</html>
