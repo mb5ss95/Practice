@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-yellow{
+            background-color: yellow;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>test</div>
+    <button class="btn-add">add</button>
+    <button class="btn-remove">remove </button>
+    <button class="btn-toggle">toggle</button>
+
+    <script>
+        const div = document.querySelector("div")
+        const btnAdd = document.querySelector(".btn-add").addEventListener("click", ()=>{
+            div.classList.add("bg-yellow")
+        })
+        const btnRemove = document.querySelector(".btn-remove").addEventListener("click", ()=>{
+            div.classList.remove("bg-yellow")
+        })
+        const btnToggle = document.querySelector(".btn-toggle").addEventListener("click", ()=>{
+            div.classList.toggle("bg-yellow")
+        })
+
+    </script>
+</body>
+</html>

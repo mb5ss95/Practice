@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            display: flex;
+            flex-direction: row;
+            background-color: black;
+            height: 300px;
+
+            /* align-items */
+            /* wrapper 내에서 가운데 정렬 */
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .box{
+            width: 80px;
+            height: 80px;
+            border: 1px solid blue;
+            background-color: red;
+        }
+        
+        .a{
+            flex: 1;
+            background-color: green;
+        }
+
+        .b{
+            flex: 2;
+            background-color: white;
+        }
+
+        .c{
+            flex: 3;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- flex의 기본은 정렬이다 -->
+    <!-- [안배움] grid의 목적은 layout임 -->
+    <div class="wrapper">
+        <div class="box a"></div>
+        <div class="box b"></div>
+        <div class="box c"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

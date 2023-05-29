@@ -1,0 +1,14 @@
+{
+  "name": "220830_js6",
+  "version": "1.0.0",
+  "description": "hello world",
+  "main": "1. lib.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^17.0.0"
+  }
+}

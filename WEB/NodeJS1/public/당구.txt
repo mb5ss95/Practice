@@ -1,0 +1,10 @@
+c++ 기하 문제들 풀기위한 vector2 구조체
+https://newdeal123.tistory.com/46
+반발계수와 탄성충돌
+https://m.blog.naver.com/toshizo/221070322911
+질점의 충돌
+https://sites.google.com/site/3dgameprogram/home/physics-modeling-for-game-programming/-gibongaenyeomdajigi---mulli/-jiljeom-ui-chungdol
+2차원 충돌
+https://saegil.tistory.com/649
+유튜브
+https://www.youtube.com/watch?v=9GmxoCqlR0Q

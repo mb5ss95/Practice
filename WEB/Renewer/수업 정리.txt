@@ -1,0 +1,27 @@
+1. var index = str.indexOf("찾는 것", 시작위치)
+const str = "helloworldhello";
+str.indexOf("hello", 6); // 6에서 찾기
+
+찾는 값이 없으면 -1
+
+2. var newStr = str.substring(startIdx, endIdx); // startIdx에서 endIdx 전까지
+문자열 자르기
+
+3. var newStr = str.slice(startIdx, endIdx); // startIdx에서 endIdx 전까지
+배열도 슬라이싱 가능, 문자열도 가능
+
+4. str.splice(startIdx, endIdx); // startIdx에서 endIdx 까지(포함해서)
+원형을 파괴함, 원래 arr 손상
+
+5. insert(전체 문자열, startIdx, 넣을 문자열)
+return 새로운 문자열
+
+6. erase(전체 문자열, startIdx, 지울 글자수)
+지우기
+
+7. var newStr = str.replace(바꿀 문자열, 대체할 문자열)
+// 맨앞에 있는것만 바꿈
+var newStr = str.replace(/바꿀 문자열/g, 대체할 문자열)
+// 모든 문자열을 바꿈
+
+8. var newStr = str.split(구분할 문자열);

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+</head>
+<body>
+    <button>요청하기</button>
+    <script>
+        document.querySelector("button").addEventListener("click", async (e) => {
+            // const result = await axios.get("http://localhost:8080/api/menus");
+            // console.log(result);
+
+            const menu_name = "치킨";
+            const menu_description = "JMT";
+            const result = await axios.post("http://localhost:8080/api/menus", {
+                menu_name : "치킨",
+                menu_description
+            });
+        console.log(result);
+    })
+    </script>
+</body>
+</html>

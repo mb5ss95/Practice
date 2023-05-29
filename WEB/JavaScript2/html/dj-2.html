@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="email" class="email">
+    <input type="password" class="password" id="">
+    <button class="btn">회원가입하기</button>
+
+    <script>
+        const email = document.querySelector(".email")
+        const passw = document.querySelector(".password")
+        const button = document.querySelector(".btn")
+
+        button.addEventListener("click", function(e){
+            const temp = email.value;
+            if(temp !== null && temp !== undefined && temp !== ""){
+                alert("아이디가 비어있습니다! 아이디를 입력해주세요")
+            }
+            console.log(temp)
+        })
+    </script>
+</body>
+</html>

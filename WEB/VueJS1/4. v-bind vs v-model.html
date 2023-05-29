@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div>
+            <!-- 애를 지우면 밑에 애도 지워줌, 양방향 데이터 바인딩-->
+            <input v-model="message"/> 
+        </div>
+        <div>
+            <!-- 애를 지워도 위는 안지워짐, 단방향 데이터 바인딩 -->
+            <input v-bind:value="message"/>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.10/dist/vue.min.js"></script>
+    <script>
+        const app = new Vue({
+            el: "#app",
+            data() {
+                return {
+                    message:"글자를 지워보자",
+                }
+            },
+            methods:{
+                bbq(){
+                    const temp = this.message;
+                    this.message = this.nextMessage;
+                    this.nextMessage = temp;
+                },
+            },
+        });
+    </script>
+</body>
+</html>

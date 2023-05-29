@@ -1,0 +1,9 @@
+<table>
+    {% for index, (key, val) in enumerate(result.items()) %}
+    <tr>
+        <th>{{index+1}}</th>
+        <td>{{key}}</td>
+        <td>{{val}}</td>
+    </tr>
+    {% endfor %}
+</table>

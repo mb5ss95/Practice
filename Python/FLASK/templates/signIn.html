@@ -1,0 +1,22 @@
+{% extends 'sign.html' %}
+
+{% block content %}
+
+<article class="signForm">
+    <h2 style="font-size: 30px;">Login</h2>
+    <div class="signIdForm">
+        <input type="text" class="inputInfo" placeholder="ID" value="admin" id="id">
+    </div>
+    <div class="signPwForm">
+        <input type="password" class="inputInfo" placeholder="PW" value="admin" id="pw">
+    </div>
+    <button type="button" class="signBtn" id="logInBtn">
+        LOG IN
+    </button>
+    <div class="bottomText" style="text-align: center">
+        Don't you have ID? <a href="/signUp">sign up</a>
+    </div>
+    <script src="../static/index.js"></script>
+</article>
+
+{% endblock %}

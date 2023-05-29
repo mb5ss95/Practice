@@ -1,0 +1,5 @@
+{"level":"error","message":"error 메시지","timestamp":"2022-09-02 15:35:14"}
+{"level":"warn","message":"warn 메시지","timestamp":"2022-09-02 15:35:14"}
+{"level":"info","message":"info 메시지","timestamp":"2022-09-02 15:35:14"}
+{"level":"http","message":"http 메시지","timestamp":"2022-09-02 15:35:14"}
+{"level":"debug","message":"debug 메시지","timestamp":"2022-09-02 15:35:14"}

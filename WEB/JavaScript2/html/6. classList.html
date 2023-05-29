@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .test{
+            font-weight: bold;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>Hi</div>
+
+    <script>
+        const div = document.querySelector("div");
+
+        // classList.add("문자열") 클래스를 추가한다
+        // 이미 추가된 속성값이라면 해당 값을 무시한다.
+        div.classList.add("test")
+
+        // classList.remove("문자열")
+        // class 속성값을 제거
+        div.classList.remove("test")
+
+        // classList.toggle("문자열")
+        // 해당 값이 없으면 추가
+        // 해당 값이 있으면 제거
+        div.classList.toggle("test")
+
+        // classList.contains("문자열")
+        // 특정 class명이 추가가 돼있는지 판별
+        // true/false 리턴
+        console.log(div.classList.contains("test")) // true
+        console.log(div.classList.contains("tests")) // false
+
+        // classList.replace(old, new)
+        // 특정 클래스 속성값을 새로운 속성값으로 바꾼다
+        div.classList.replace("test", "new")
+        
+    </script>
+</body>
+</html>

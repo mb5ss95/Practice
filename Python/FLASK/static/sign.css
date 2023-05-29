@@ -1,0 +1,47 @@
+.signForm {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    padding: 30px, 20px;
+    background-color: #ffffff;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+  }
+  
+  .inputInfo {
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-bottom: 2px solid #adadad;
+    outline: none;
+    color: #636e72;
+    font-size: 15px;
+    height: 25px;
+    background: none;
+  }
+  
+  .signBtn {
+    position: relative;
+    left: 40%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 80%;
+    height: 40px;
+    background: linear-gradient(125deg, #81ecec, #6c5ce7, #81ecec);
+    background-position: left;
+    background-size: 200%;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+    display: inline;
+  }
+  
+  .logInBtn:hover {
+    background-position: right;
+  }

@@ -1,0 +1,40 @@
+주키
+pk - 절대 중복되어선 안된다
+primary key
+
+외래키
+fk - 다른 테이블에 있는 pk
+foreign key
+
+관계
+주키-외래키와의 관계
+
+select 고르기
+from 어디서
+where 조건식 (and, or, =)
+
+select name as new_name, age new_age from minco.honey
+
+정렬하기 order by를 붙힘
+오름차순 기본값 ASC
+내림차순 DESC
+
+이 두개는 같은 말
+selecct * from honey order by age asc
+selecct * from honey order by age
+
+내림차순
+selecct * from honey order by age desc
+
+limit 데이터의 제한 -> row가 2이하만
+select * from honey limit 2;
+
+offset 시작행을 설정 (1에서 시작해서 2개만)
+select * from honey limit 2 offset 1;
+
+K와 R 사이에 한글자는 아무거나 들어가도 된다
+select * from city where CountryCode Like 'K_R';
+
+select Name, CountryCode from city where Population between 10000000 and 2000000
+and CountryCode = 'jpn';
+between

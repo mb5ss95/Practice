@@ -1,0 +1,40 @@
+img {
+    width: 201px;
+    height: 268px;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+}
+.card{
+    width: 201px;
+    height: 268px;
+    object-fit: cover;
+    border: 1px black solid;
+    margin: 5px;
+}
+
+main{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.back-none{
+    display:none;
+}
+
+.back-show{
+    display:inline;
+}
+
+.front-none{
+    display:none;
+}
+
+.front-show{
+    display:inline;
+}

@@ -1,0 +1,10 @@
+.box{
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    margin-left: 30px;
+    /* 시계방향 위 오른쪽 아래 왼쪽 */
+    margin:20px 20px 20px 20px;
+    /* 위 아래 20px 왼쪽 오른쪽 30px */
+    margin: 20px 30px;
+}

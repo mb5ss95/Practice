@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .test1, .test2{
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+        .container{
+            height: 1200px;
+            border: 1px solid red;
+        }
+
+        .test1{
+            position: fixed;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- 메뉴바 만들때 고정 -->
+    <!-- 레이아웃을 고정시킨다 -->
+    <!-- 상위 요소에 영향을 받지않고  -->
+    <!-- fixed하면 inline으로 변환됨 -->
+    <div class="container">
+        <div class="test1">test1</div>
+        <div class="test2">test2</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    flex:1;
+}
+main{
+    /* 절대적 배치 */
+    position:absolute;
+    /* 중앙으로 배치 */
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* 텍스트 가운데 정렬 */
+    text-align: center;
+}
+
+.wrapper-info{
+    margin: 10px;
+    width: 200px;
+    height: 250px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-info{
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    background-size: cover;
+}
+
+
+.text-info{
+    width: 180px;
+    height: 170px;
+    border-radius: 10%;
+    border: 1px solid black;
+}
+
+.image-add{
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+}

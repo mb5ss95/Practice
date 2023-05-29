@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div v-if="renderA">a</div>
+        <div v-if="renderA">b</div>
+        <div v-if="renderA">c</div>
+        <div v-if="renderB">d</div>
+        <div v-if="renderB">e</div>
+        <div v-if="renderC">f</div>
+        <div v-if="renderC">g</div>
+        <button v-on:click="bbq">gogo</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.10/dist/vue.min.js"></script>
+    <script>
+        const app = new Vue({
+            el: "#app",
+            data() {
+                return {
+                    renderA:true,
+                    renderB:false,
+                    renderC:false,
+                    nextRender:false,
+                }
+            },
+            methods:{
+                bbq(){
+                    if(this.renderA){
+                        this.renderB = this.renderA;
+                        this.renderA = this.renderC;
+                    }
+                    else if(this.renderB){
+                        this.renderC = this.renderB;
+                        this.renderB = this.renderA;
+                    }
+                    else{
+                        this.renderA = this.renderC;
+                        this.renderC = this.renderB;
+                    }
+                },
+            },
+        });
+    </script>
+</body>
+</html>

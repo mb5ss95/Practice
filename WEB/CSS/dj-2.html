@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 1200px;
+      }
+
+      .container {
+        border: 1px solid black;
+        width: 97%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        padding: 10px;
+      }
+
+      .box * {
+        height: 80px;
+        width: 80px;
+      }
+
+      .a {
+        border: 1px solid black;
+        display: flex;
+      }
+
+      .a * {
+        border: 1px solid black;
+      }
+
+      .b {
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      .c {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .c * {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box a">
+        <div>메뉴1</div>
+        <div>메뉴2</div>
+        <div>메뉴3</div>
+      </div>
+      <div class="box b">
+        <div>logo</div>
+      </div>
+      <div class="box c">
+        <div>회원가입</div>
+        <div>로그인</div>
+      </div>
+    </div>
+  </body>
+</html>

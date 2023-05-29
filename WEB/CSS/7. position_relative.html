@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grand-parent,
+        .parent,
+        .child{
+            border:1px solid black;
+        }
+
+        .parent{
+            position: relative;
+        }
+
+        .child{
+            /* position: static은 변경이 안됨, default */
+            /* top:100px 안됨 */
+            
+
+            /* relative는 부모를 기준으로 움인다 */
+            /* 자식은 부모의 영역을 침범하지 않음 */
+            position: relative;
+            /* 왼오위아 100px 여백 */
+            left: 100px;
+            /* right: 100px */
+            /* top: 100px; */
+            /* bottom: 100px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="grand-parent">
+        할빠
+        <div class="parent">
+            엄빠
+            <div class="child">
+                나
+            </div>
+        </div>
+    </div>
+</body>
+</html>

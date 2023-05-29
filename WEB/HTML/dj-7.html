@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .my {
+        background-color: gray;
+        color: white;
+        border: 1px solid black;
+        text-align: center;
+        padding: 20px 10px 20px 10px;
+      }
+
+      .name{
+        margin-left: 15%;
+        float: left;
+      }
+
+      .image {
+        width: 150px;
+        height: 150px;
+        /* cover 어느정도 카바 */
+        /* contain 사이즈 줄여줌, 사진 반복 */
+        /* no-repeat 반복 중지 */
+        background-size: cover;
+        /* 원처리 */
+        border-radius: 50%;
+        /* 가운데 정렬 */
+        margin-left: 10%;
+        float: left;
+      }
+
+      .image-wrapper1 {
+        background-image: url("./image/사나1.jpg");
+      }
+      .image-wrapper2 {
+        background-image: url("./image/사나.jpg");
+      }
+      .image-wrapper3 {
+        background-image: url("./image/사나2.jpg");
+      }
+      .image-wrapper4 {
+        background-image: url("./image/사나5.jpg");
+      }
+      .image-wrapper5 {
+        background-image: url("./image/사나4.jpg");
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="my">트와이스 사나의 사사사진을 올려보자~</h1>
+    <div>
+      <div class="image image-wrapper1"></div>
+      <div class="image image-wrapper2"></div>
+      <div class="image image-wrapper3"></div>
+      <div class="image image-wrapper4"></div>
+      <div class="image image-wrapper5"></div>
+    </div>
+    <div>
+        <div class="name">사나1</div>
+        <div class="name">사나2</div>
+        <div class="name">사나3</div>
+        <div class="name">사나4</div>
+        <div class="name">사나5</div>
+    </div>
+  </body>
+</html>

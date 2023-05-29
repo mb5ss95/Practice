@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" class="keydown">
+    <div class="keydown-result"></div>
+
+    <script>
+        // key down
+        // 키보드를 눌렀을때
+                // key up
+        // 키보드를 눌렀다 뗏을때
+        const keydown = document.querySelector(".keydown");
+        const keydownResult = document.querySelector(".keydown-result");
+
+        keydown.addEventListener("keydown", (e) => {
+            console.log(e.target.value);
+            console.log(e);
+            console.log(e.code);
+            keydownResult.textContent = e.code;
+
+            if(e.code == "Enter"){
+                e.target.value = "";
+            }
+        })
+    </script>
+</body>
+</html>

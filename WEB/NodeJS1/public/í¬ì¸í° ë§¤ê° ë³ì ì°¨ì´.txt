@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+void ABC(int a, int b, int* sum, int* gop)
+{
+	*sum = a + b;
+	*gop = a * b;
+}
+
+int main()
+{
+	int a, b;
+	int sum, gop;
+
+	cin >> a >> b;
+	ABC(a, b, &sum, &gop);
+
+	cout << sum << " " << gop;
+
+	return 0;
+}
+
+================================
+
+#include <iostream>
+
+using namespace std;
+
+void ABC(int a, int b, int &SUM, int &GOP) {
+	SUM = a + b;
+	GOP = a * b;
+}
+
+int main() {
+	char ch[10];
+	int a, b, SUM, GOP;
+
+	cin >> a >> b;
+	ABC(a, b, SUM, GOP);
+	cout << SUM << " " << GOP;
+}
+

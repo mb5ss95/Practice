@@ -1,0 +1,4 @@
+로그를 찍어주는 패키지
+winston, winston-daily-rotate-file
+
+js 파일을 가져올때는 .js확장자를 안씀
