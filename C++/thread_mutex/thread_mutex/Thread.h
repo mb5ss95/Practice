@@ -9,10 +9,11 @@
 class Thread {
 public:
 	std::mutex m_mutex;
-	std::thread m_thread;
+	std::thread m_thread1, m_thread2;
 	int cnt = 0;
 
 	Thread();
 	~Thread();
 	void subRun();
+	void mainRun();
 };
